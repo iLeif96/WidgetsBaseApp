@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <LangVersion>preview</LangVersion>
+    <ProjectGuid>{AE8A3A70-7434-4FDD-BF9C-F645550D4096}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iLeif.Widgets</RootNamespace>
+    <AssemblyName>Widgets</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractBase\WidgetController.cs" />
+    <Compile Include="AbstractBase\WidgetMember.cs" />
+    <Compile Include="AbstractBase\WidgetModel.cs" />
+    <Compile Include="AbstractBase\WidgetView.cs" />
+    <Compile Include="Classes\Button\ButtonModel.cs" />
+    <Compile Include="Classes\Button\ButtonWidget.cs" />
+    <Compile Include="Classes\Container\ContainerWidget.cs" />
+    <Compile Include="Interfaces\Controllers\IHandlerController.cs" />
+    <Compile Include="Interfaces\Members\IClickableWidget.cs" />
+    <Compile Include="Interfaces\Members\ICompositeWidget.cs" />
+    <Compile Include="Interfaces\Members\IMouseableWidget.cs" />
+    <Compile Include="Interfaces\Models\IMouseableModel.cs" />
+    <Compile Include="Interfaces\Views\IWidgetView.cs" />
+    <Compile Include="IWidget.cs" />
+    <Compile Include="IWidgetController.cs" />
+    <Compile Include="IWidgetEnvironment.cs" />
+    <Compile Include="IWidgetModel.cs" />
+    <Compile Include="IWidgetView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\Label\" />
+    <Folder Include="Events\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Environments\ViewEnvironments.csproj">
+      <Project>{c9588eda-2b51-4caa-8b2a-9f4af03e1229}</Project>
+      <Name>ViewEnvironments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC\MVC.csproj">
+      <Project>{48f3059f-95bb-48b0-a93a-378722bb56b9}</Project>
+      <Name>MVC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
