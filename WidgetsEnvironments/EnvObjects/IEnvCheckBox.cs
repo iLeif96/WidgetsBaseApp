@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iLeif.Environments.AcEditor
+namespace iLeif.Environments.EnvObjects
 {
-    public class AcEditorTransit
+    public interface IEnvCheckBox : IEnvObject, IEnvIco
     {
-
+        bool IsChecked { get; set; }
     }
 }

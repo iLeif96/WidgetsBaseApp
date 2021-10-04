@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iLeif.ViewEnvironments
+namespace iLeif.Environments.EnvLayouts
 {
-    public interface IViewObject
+    public interface IEnvRelativeLayout
     {
-
+        IEnvObject Parent { get; set; }
     }
 }

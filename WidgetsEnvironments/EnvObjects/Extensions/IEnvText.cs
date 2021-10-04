@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iLeif.ViewEnvironments.AcTab
+namespace iLeif.Environments.EnvObjects
 {
-    public class AcTab : IViewEnvironment
+    public interface IEnvText : IEnvObject
     {
-
+        string Text { get; set; }
     }
 }

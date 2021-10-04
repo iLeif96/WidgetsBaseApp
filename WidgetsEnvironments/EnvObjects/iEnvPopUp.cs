@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iLeif.Widgets
+namespace iLeif.Environments.EnvObjects
 {
-    public interface IWidgetEnvironment
+    public interface IEnvPopUp : IEnvText
     {
+        
     }
 }

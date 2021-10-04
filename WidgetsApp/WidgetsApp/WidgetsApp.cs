@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iLeif.Environments.AcEditor
+namespace WidgetsApp
 {
-    public class AcEditorTransit
+    public class WidgetsApp
     {
 
     }

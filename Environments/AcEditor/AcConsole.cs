@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace iLeif.Environments.AcEditor
+namespace iLeif.Environments.AcConsole
 {
-    public class AcEditorTransit
+    internal class AcConsole : IWidgetEnvironment
     {
 
     }

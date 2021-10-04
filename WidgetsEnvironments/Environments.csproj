@@ -7,8 +7,8 @@
     <ProjectGuid>{C9588EDA-2B51-4CAA-8B2A-9F4AF03E1229}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>iLeif.ViewEnvironments</RootNamespace>
-    <AssemblyName>ViewEnvironments</AssemblyName>
+    <RootNamespace>iLeif.Environments</RootNamespace>
+    <AssemblyName>Environments</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,17 +42,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AcConsole\AcConsole.cs" />
-    <Compile Include="AcEditor\AcEditor.cs" />
-    <Compile Include="AcEditor\AcEditorTransit.cs" />
-    <Compile Include="AcTab\AcTab.cs" />
-    <Compile Include="IViewEnvironment.cs" />
-    <Compile Include="IViewObject.cs" />
-    <Compile Include="WinForm\WinForm.cs" />
+    <Compile Include="EnvLayouts\IEnvAbsoluteLayout.cs" />
+    <Compile Include="EnvLayouts\IEnvColumn.cs" />
+    <Compile Include="EnvLayouts\IEnvRelativeLayout.cs" />
+    <Compile Include="EnvLayouts\IEnvRow.cs" />
+    <Compile Include="EnvLayouts\IEnvTable.cs" />
+    <Compile Include="EnvLayouts\IEnvTableCell.cs" />
+    <Compile Include="EnvLayouts\IEnvTableColumn.cs" />
+    <Compile Include="EnvLayouts\IEnvTableRow.cs" />
+    <Compile Include="EnvObjects\IEnvButton.cs" />
+    <Compile Include="EnvObjects\IEnvCheckBox.cs" />
+    <Compile Include="EnvObjects\IEnvContainer.cs" />
+    <Compile Include="EnvObjects\Extensions\IEnvIco.cs" />
+    <Compile Include="EnvObjects\IEnvLabel.cs" />
+    <Compile Include="EnvObjects\iEnvPopUp.cs" />
+    <Compile Include="EnvObjects\Extensions\IEnvText.cs" />
+    <Compile Include="EnvObjects\IEnvRadioButton.cs" />
+    <Compile Include="EnvObjects\IEnvRadioField.cs" />
+    <Compile Include="EnvObjects\IEnvTextBox.cs" />
+    <Compile Include="IEnvironment.cs" />
+    <Compile Include="IEnvLayout.cs" />
+    <Compile Include="IEnvObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CommonEnv\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

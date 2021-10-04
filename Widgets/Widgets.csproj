@@ -68,9 +68,9 @@
     <Folder Include="Events\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Environments\ViewEnvironments.csproj">
+    <ProjectReference Include="..\WidgetsEnvironments\Environments.csproj">
       <Project>{c9588eda-2b51-4caa-8b2a-9f4af03e1229}</Project>
-      <Name>ViewEnvironments</Name>
+      <Name>Environments</Name>
     </ProjectReference>
     <ProjectReference Include="..\MVC\MVC.csproj">
       <Project>{48f3059f-95bb-48b0-a93a-378722bb56b9}</Project>

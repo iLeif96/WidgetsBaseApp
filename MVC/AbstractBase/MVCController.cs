@@ -1,6 +1,7 @@
 ﻿namespace iLeif.MVC.AbstractBase
 {
-    internal interface MVSModel
+    public class MVCController
     {
+
     }
 }

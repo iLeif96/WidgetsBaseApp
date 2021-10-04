@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iLeif.ViewEnvironments.AcEditor
+namespace iLeif.Environments.AcEditor
 {
-    public class AcEditor : IViewEnvironment
+    public class AcEditor : IWidgetEnvironment
     {
 
     }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iLeif.ViewEnvironments.WinForm
+namespace iLeif.Environments
 {
-    public class WinForm : IViewEnvironment
+    public interface IEnvLayout
     {
 
     }

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iLeif.Environments.AcEditor
+namespace iLeif.Environments.EnvLayouts
 {
-    public class AcEditorTransit
+    public interface IEnvTableCell
     {
-
     }
 }

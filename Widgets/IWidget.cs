@@ -4,9 +4,6 @@ namespace iLeif.Widgets
 {
     public interface IWidget : IMVC
     {
-        IWidgetEnvironment GetEnvironment();
-        void SetEnvironment(IWidgetEnvironment env);
-
         ///<summary>
         /// Hides the member
         ///</summary>
@@ -16,5 +13,7 @@ namespace iLeif.Widgets
         ///Shows the member
         ///</summary>
         void Show();
+
+
     }
 }
