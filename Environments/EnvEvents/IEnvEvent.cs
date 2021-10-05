@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iLeif.EnvWidgets
+namespace iLeif.Environments.EnvEvents
 {
-    public class EnvWidgetsApp
+    public interface IEnvEvent
     {
-
     }
 }

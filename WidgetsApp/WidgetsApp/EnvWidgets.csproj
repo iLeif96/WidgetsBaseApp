@@ -7,8 +7,8 @@
     <ProjectGuid>{1448F4AF-8A69-4473-86D4-631342195BB6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>iLeif.WidgetsApp</RootNamespace>
-    <AssemblyName>WidgetsApp</AssemblyName>
+    <RootNamespace>iLeif.EnvWidgets</RootNamespace>
+    <AssemblyName>EnvWidgets</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -43,19 +43,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnvWidget.cs" />
+    <Compile Include="EnvWidgetFactory.cs" />
     <Compile Include="EnvWidgetTypes\Button.cs" />
     <Compile Include="IEnvWidgetModel.cs" />
     <Compile Include="IEnvWidgetView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EnvWidgetsApp.cs" />
     <Compile Include="IEnvWidgetController.cs" />
+    <Compile Include="UId.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Environments\Environments.csproj">
       <Project>{c9588eda-2b51-4caa-8b2a-9f4af03e1229}</Project>
       <Name>Environments</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Graphic\Graphic\Graphic.csproj">
+    <ProjectReference Include="..\..\Graphic\Graphic.csproj">
       <Project>{c0ad12f1-74b4-4f13-833d-6abf5a976c1b}</Project>
       <Name>Graphic</Name>
     </ProjectReference>

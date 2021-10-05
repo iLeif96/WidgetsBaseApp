@@ -8,6 +8,7 @@ namespace iLeif.Environments
 {
     public interface IEnvObject
     {
+        UId _id { get; }
         Graphic.Size Size { get; set; }
         bool IsActive { get; set; }
         bool IsCollapced { get; set; }

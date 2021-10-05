@@ -2,17 +2,13 @@
 
 using iLeif.Environments.EnvObjects;
 using iLeif.Graphic;
-using iLeif.MVC;
 using iLeif.Widgets.AbstractBase;
 
-namespace WidgetsApp.EnvWidgetTypes
+namespace iLeif.EnvWidgets.EnvWidgetTypes
 {
     public class Button : EnvWidget
     {
-        private Button(IModel model, IController controller, IView view) : base(model, controller, view)
-        {
 
-        }
     }
 
     internal class ButtonModel : WidgetBaseModel, IEnvButton

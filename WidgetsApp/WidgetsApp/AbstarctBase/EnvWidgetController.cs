@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using iLeif.Environments;
 using iLeif.Widgets;
 
-namespace iLeif.WidgetsApp
+namespace iLeif.EnvWidgets.AbstarctBase
 {
-    public interface IEnvWidgetModel : IWidgetModel, IEnvObject
+    public abstract class EnvWidgetController : IWidgetController
     {
 
     }

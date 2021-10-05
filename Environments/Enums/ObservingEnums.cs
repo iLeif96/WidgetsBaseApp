@@ -4,11 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using iLeif.Widgets;
-
-namespace iLeif.WidgetsApp
+namespace iLeif.Environments.Enums
 {
-    public interface IEnvWidgetController : IWidgetController
-    {
-    }
+    public enum KeyUpDown { None, Up, Down }
 }
