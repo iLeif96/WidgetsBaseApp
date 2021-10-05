@@ -1,8 +1,6 @@
-﻿using iLeif.MVC;
-
-namespace iLeif.Widgets
+﻿namespace iLeif.Widgets
 {
-    public interface IWidget : IMVC
+    public interface IWidget
     {
         ///<summary>
         /// Hides the member
@@ -13,7 +11,5 @@ namespace iLeif.Widgets
         ///Shows the member
         ///</summary>
         void Show();
-
-
     }
 }

@@ -1,9 +1,8 @@
-﻿using iLeif.MVC;
-
-namespace iLeif.Widgets
+﻿namespace iLeif.Widgets
 {
-    public interface IWidgetView : IView
+    public interface IWidgetView
     {
-
+        void Show();
+        void Hide();
     }
 }

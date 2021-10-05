@@ -1,8 +1,7 @@
-﻿using iLeif.MVC;
-
-namespace iLeif.Widgets
+﻿namespace iLeif.Widgets
 {
-    public interface IWidgetModel : IModel
+    public interface IWidgetModel
     {
+
     }
 }
