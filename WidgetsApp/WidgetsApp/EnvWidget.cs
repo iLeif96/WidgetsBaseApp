@@ -11,7 +11,7 @@ namespace iLeif.WidgetsApp
 {
     public abstract class EnvWidget : WidgetBase
     {
-        private EnvWidget(IEnvWidgetModel model, IController controller, IView view) : base(model, controller, view)
+        private EnvWidget(IEnvWidgetModel model, IEnvWidgetController controller, IEnvWidgetView view) : base(model, controller, view)
         {
 
         }

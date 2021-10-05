@@ -24,7 +24,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormEnv", "..\Environmen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcEditorEnv", "..\EnvironmentLibs\AcEditor\AcEditorEnv.csproj", "{208327F5-C544-45E6-9354-85C954A21091}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphic", "..\Graphic\Graphic\Graphic.csproj", "{C0AD12F1-74B4-4F13-833D-6ABF5A976C1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphic", "..\Graphic\Graphic.csproj", "{C0AD12F1-74B4-4F13-833D-6ABF5A976C1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using iLeif.Widgets;
+
 namespace iLeif.WidgetsApp
 {
-    public interface IEnvWidgetController
+    public interface IEnvWidgetController : IWidgetController
     {
     }
 }
