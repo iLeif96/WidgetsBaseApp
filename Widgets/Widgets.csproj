@@ -4,8 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <LangVersion>preview</LangVersion>
-    <ProjectGuid>{AE8A3A70-7434-4FDD-BF9C-F645550D4096}</ProjectGuid>
+    <ProjectGuid>{1448F4AF-8A69-4473-86D4-631342195BB6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>iLeif.Widgets</RootNamespace>
@@ -43,22 +42,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractBase\WidgetBaseController.cs" />
-    <Compile Include="AbstractBase\WidgetBase.cs" />
-    <Compile Include="AbstractBase\WidgetBaseModel.cs" />
-    <Compile Include="AbstractBase\WidgetBaseView.cs" />
-    <Compile Include="IWidget.cs" />
-    <Compile Include="IWidgetController.cs" />
-    <Compile Include="IWidgetModel.cs" />
-    <Compile Include="IWidgetView.cs" />
+    <Compile Include="AbstarctBase\EnvWidget.cs" />
+    <Compile Include="WidgetControllers\ClickPresenter.cs" />
+    <Compile Include="WidgetFactory.cs" />
+    <Compile Include="WidgetTypes\Button.cs" />
+    <Compile Include="AbstarctBase\EnvWidgetModel.cs" />
+    <Compile Include="AbstarctBase\EnvWidgetView.cs" />
+    <Compile Include="WidgetTypesEnum.cs" />
+    <Compile Include="WidgetTypes\CheckBox.cs" />
+    <Compile Include="WidgetTypes\Container.cs" />
+    <Compile Include="WidgetTypes\Label.cs" />
+    <Compile Include="WidgetTypes\PopUp.cs" />
+    <Compile Include="WidgetTypes\RadioBox.cs" />
+    <Compile Include="WidgetTypes\RadioButton.cs" />
+    <Compile Include="WidgetTypes\TextBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WidgetsApp.cs" />
+    <Compile Include="AbstarctBase\EnvWidgetController.cs" />
+    <Compile Include="UId.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Environments\Environments.csproj">
-      <Project>{c9588eda-2b51-4caa-8b2a-9f4af03e1229}</Project>
-      <Name>Environments</Name>
+    <ProjectReference Include="..\Graphic\Graphic.csproj">
+      <Project>{c0ad12f1-74b4-4f13-833d-6abf5a976c1b}</Project>
+      <Name>Graphic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MVP\MVP.csproj">
+      <Project>{ae8a3a70-7434-4fdd-bf9c-f645550d4096}</Project>
+      <Name>MVP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WidgetEvents\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

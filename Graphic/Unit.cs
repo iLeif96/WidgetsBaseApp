@@ -12,7 +12,7 @@
             UType = unitType;
         }
 
-        Unit ConvertTo(UnitType uT)
+        private Unit ConvertTo(UnitType uT)
         {
             if (UType == uT)
             {
@@ -31,5 +31,8 @@
 
             return this;
         }
+
+        public static implicit operator Unit(int pixel) => new Unit(pixel, UnitType.Pixel);
+        public static implicit operator Unit(double mm) => new Unit(mm, UnitType.Mm);
     }
 }

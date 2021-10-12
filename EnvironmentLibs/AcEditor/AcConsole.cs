@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-namespace iLeif.Environments.AcConsole
+﻿namespace iLeif.Environments.AcConsole
 {
     internal class AcConsole : IWidgetEnvironment
     {
