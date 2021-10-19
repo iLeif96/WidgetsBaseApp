@@ -1,4 +1,4 @@
-﻿namespace iLeif.Environments.EnvLayouts
+﻿namespace iLeif.Environment.EnvLayoutModels.Positioning
 {
     public interface IEnvAbsoluteLayout : IEnvLayoutModel
     {

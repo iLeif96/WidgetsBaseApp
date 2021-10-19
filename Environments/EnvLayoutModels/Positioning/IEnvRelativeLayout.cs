@@ -1,7 +1,7 @@
-﻿namespace iLeif.Environments.EnvLayouts
+﻿namespace iLeif.Environment.EnvLayoutModels.Positioning
 {
     public interface IEnvRelativeLayout
     {
-        IEnvModel Parent { get; set; }
+        IEnvViewState Parent { get; set; }
     }
 }

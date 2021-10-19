@@ -32,6 +32,8 @@
             return this;
         }
 
+        public override bool Equals(object obj) => (obj is Unit unit) && unit.Value == Value && unit.UType == UType;
+
         public static implicit operator Unit(int pixel) => new Unit(pixel, UnitType.Pixel);
         public static implicit operator Unit(double mm) => new Unit(mm, UnitType.Mm);
     }

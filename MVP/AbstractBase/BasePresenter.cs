@@ -1,4 +1,4 @@
-﻿namespace iLeif.Widgets.AbstractBase
+﻿namespace iLeif.MVP.AbstractBase
 {
     public abstract class BasePresenter : IPresenter
     {

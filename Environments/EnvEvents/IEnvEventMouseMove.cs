@@ -1,7 +1,7 @@
 ﻿
 using iLeif.Environments.EnvEvents;
 
-namespace iLeif.Environments.EnvObserving.IEnvObservers
+namespace iLeif.Environment.EnvEvents
 {
     public interface IEnvMouseMove : IEnvEvent
     {

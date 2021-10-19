@@ -1,4 +1,4 @@
-﻿namespace iLeif.Environments
+﻿namespace iLeif.Environment.EnvObserving
 {
     public interface IEnvObserver
     {

@@ -1,9 +1,9 @@
 ﻿
-using iLeif.Widgets;
+using iLeif.MVP;
 
-namespace iLeif.Environments
+namespace iLeif.Environment
 {
-    public interface IEnvView : IWidgetView
+    public interface IEnvView<TEnvStateView> : IView where TEnvStateView : IEnvViewState
     {
 
     }

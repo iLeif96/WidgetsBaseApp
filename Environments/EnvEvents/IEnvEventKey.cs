@@ -2,7 +2,7 @@
 
 using iLeif.Environments.Enums;
 
-namespace iLeif.Environments.EnvEvents
+namespace iLeif.Environment.EnvEvents
 {
     public interface IEnvEventKey
     {

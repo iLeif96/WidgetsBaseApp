@@ -1,8 +1,7 @@
-﻿namespace iLeif.Widgets
+﻿namespace iLeif.MVP
 {
     public interface IModel
     {
-        string Name { get; set; }
-        string Description { get; set; }
+
     }
 }

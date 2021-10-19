@@ -1,9 +1,9 @@
-﻿namespace iLeif.Widgets
+﻿namespace iLeif.MVP
 {
     public interface IView
     {
         void Show();
-        void Hide();
+        void Collapse();
         void Update();
     }
 }

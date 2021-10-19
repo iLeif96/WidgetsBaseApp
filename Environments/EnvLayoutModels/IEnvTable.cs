@@ -1,4 +1,4 @@
-﻿namespace iLeif.Environments.EnvLayouts
+﻿namespace iLeif.Environment.EnvLayoutModels
 {
     public interface IEnvTable : IEnvAbsoluteLayout, IEnvRelativeLayout
     {

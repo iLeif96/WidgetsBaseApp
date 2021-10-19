@@ -1,9 +1,6 @@
-﻿
-using iLeif.Widgets;
-
-namespace iLeif.Environments
+﻿namespace iLeif.Environment
 {
-    public interface IEnvLayoutModel : IWidgetModel
+    public interface IEnvLayoutModel
     {
 
     }

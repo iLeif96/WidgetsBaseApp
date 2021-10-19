@@ -1,21 +1,26 @@
 ﻿
-using iLeif.Environments.EnvModels;
-using iLeif.Environments.EnvViews;
+using iLeif.Environment.EnvViewStates;
+using iLeif.Environment.EnvViews;
+using iLeif.Graphic;
+using iLeif.MVP;
+using System.Collections.Generic;
 
-namespace iLeif.Environments
+namespace iLeif.Environment
 {
+    public class CheckModel : IEnvCheckBoxState
+    {
+        public bool IsChecked { get; set; }
+        public Size Size { get; set; }
+        public bool IsActive { get; set; }
+        public bool IsCollapced { get; set; }
+        public Dictionary<string, Image> Ico { get; set; }
+        public bool IsIcoUsing { get; set; }
+    }
+
     public interface IEnvironment
     {
-        IEnvLayoutModel DefaultLayout { get; }
-
-        IEnvButtonView AddButton(IEnvButtonModel envObject, IEnvLayoutModel envLayout = null);
-        IEnvLabelView AddLabel(IEnvLabelModel envObject, IEnvLayoutModel envLayout = null);
-        IEnvContainerView AddContainer(IEnvContainerModel envObject, IEnvLayoutModel envLayout = null);
-        IEnvCheckBoxView AddCheckBox(IEnvCheckBoxModel envObject, IEnvLayoutModel envLayout = null);
-        IEnvRadioButtonView AddRadioButton(IEnvRadioButtonModel envObject, IEnvLayoutModel envLayout = null);
-        IEnvRadioBoxView AddRadio(IEnvRadioBoxModel envObject, IEnvLayoutModel envLayout = null);
-        IEnvPopUpView AddPopUp(IEnvPopUpModel envObject, IEnvLayoutModel envLayout = null);
-
-        void UpdateEnvView(IEnvModel envObject);
+        string Name { get; }
+        //IEnvironment GetInctance();
+        IEnvPresentatorsFactory CreateFactory();
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace iLeif.Environments.EnvEvents
+﻿namespace iLeif.Environment.EnvEvents
 {
     public interface IEnvEvent
     {

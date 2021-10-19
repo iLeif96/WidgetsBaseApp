@@ -42,7 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enums\ObservingEnums.cs" />
+    <Compile Include="EnvBases\EnvPresenterBase.cs" />
+    <Compile Include="EnvBases\EnvViewStateBase.cs" />
+    <Compile Include="EnvEnums\IcoTypes.cs" />
+    <Compile Include="EnvEnums\ObservingEnums.cs" />
     <Compile Include="EnvEvents\IEnvEvent.cs" />
     <Compile Include="EnvEvents\IEnvEventKey.cs" />
     <Compile Include="EnvLayoutModels\IEnv2dView.cs" />
@@ -55,9 +58,17 @@
     <Compile Include="EnvLayoutModels\IEnvTableCell.cs" />
     <Compile Include="EnvLayoutModels\IEnvTableColumn.cs" />
     <Compile Include="EnvLayoutModels\IEnvTableRow.cs" />
-    <Compile Include="EnvModels\IEnvModels.cs" />
-    <Compile Include="EnvModels\Extensions\IEnvIco.cs" />
-    <Compile Include="EnvModels\Extensions\IEnvText.cs" />
+    <Compile Include="EnvManager.cs" />
+    <Compile Include="EnvTransactions\Realisation\EnvReadWriteTransactions.cs" />
+    <Compile Include="EnvTransactions\Realisation\EnvTransactionManager.cs" />
+    <Compile Include="EnvTransactions\IEnvTransactionMember.cs" />
+    <Compile Include="EnvTransactions\ITimeoutable.cs" />
+    <Compile Include="EnvTransactions\Realisation\EnvTransactionMember.cs" />
+    <Compile Include="EnvViewStates\IEnvStates.cs" />
+    <Compile Include="EnvViewStates\Extensions\IEnvIco.cs" />
+    <Compile Include="EnvViewStates\Extensions\IEnvText.cs" />
+    <Compile Include="EnvPresenters\EnvPresenters.cs" />
+    <Compile Include="EnvTransactions\IEnvTransaction.cs" />
     <Compile Include="EnvViews\IEnvViews.cs" />
     <Compile Include="EnvObserving\IEnvObserver.cs" />
     <Compile Include="EnvObserving\IEnvObservable.cs" />
@@ -67,19 +78,32 @@
     <Compile Include="EnvEvents\IEnvEventTextInput.cs" />
     <Compile Include="IEnvironment.cs" />
     <Compile Include="IEnvLayoutModel.cs" />
-    <Compile Include="IEnvModel.cs" />
     <Compile Include="IEnvPresenter.cs" />
+    <Compile Include="IEnvUnique.cs" />
+    <Compile Include="IEnvViewState.cs" />
     <Compile Include="IEnvView.cs" />
+    <Compile Include="IEnvPresentatorsFactory.cs" />
     <Compile Include="IEvent.cs" />
-    <Compile Include="UId.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EnvTransactions\Realisation\EnvTransaction.cs" />
+    <Compile Include="EnvTransactions\IEnvTransactionManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Extensions\Extensions.csproj">
+      <Project>{52358dd1-70b1-4ac7-95f3-76b6dd4944d1}</Project>
+      <Name>Extensions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Graphic\Graphic.csproj">
       <Project>{c0ad12f1-74b4-4f13-833d-6abf5a976c1b}</Project>
       <Name>Graphic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MVP\MVP.csproj">
+      <Project>{ae8a3a70-7434-4fdd-bf9c-f645550d4096}</Project>
+      <Name>MVP</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

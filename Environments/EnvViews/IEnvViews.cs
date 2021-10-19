@@ -1,41 +1,43 @@
-﻿namespace iLeif.Environments.EnvViews
+﻿using iLeif.Environment.EnvViewStates;
+
+namespace iLeif.Environment.EnvViews
 {
-    public interface IEnvContainerView : IEnvView
+    public interface IEnvContainerView : IEnvView<IEnvContainerState>
     {
 
     }
 
-    public interface IEnvButtonView : IEnvView
+    public interface IEnvButtonView : IEnvView<IEnvButtonState>
     {
 
     }
 
-    public interface IEnvLabelView : IEnvView
+    public interface IEnvLabelView : IEnvView<IEnvLabelState>
     {
 
     }
 
-    public interface IEnvCheckBoxView : IEnvView
+    public interface IEnvCheckBoxView : IEnvView<IEnvCheckBoxState>
     {
 
     }
 
-    public interface IEnvRadioBoxView : IEnvView
+    public interface IEnvRadioBoxView : IEnvView<IEnvRadioBoxState>
     {
 
     }
 
-    public interface IEnvRadioButtonView : IEnvView
+    public interface IEnvRadioButtonView : IEnvView<IEnvRadioButtonState>
     {
 
     }
 
-    public interface IEnvTexBoxView : IEnvView
+    public interface IEnvTexBoxView : IEnvView<IEnvTextBoxState>
     {
 
     }
 
-    public interface IEnvPopUpView : IEnvView
+    public interface IEnvPopUpView : IEnvView<IEnvPopUpState>
     {
 
     }
